@@ -1,116 +1,46 @@
-# SpaceX-Launch-Data-Web-Scraping
-Python web scraping project that extracts SpaceX launch data from Wikipedia using Requests and BeautifulSoup. The workflow parses HTML tables, cleans and structures launch details including payloads, orbits, customers, booster versions, and outcomes into a Pandas DataFrame for analysis and machine learning applications. 
+# SpaceX Launch Data Web Scraping
 
-# SpaceX Launch Data Web Scraping Project
+A Python-based learning project exploring the extraction of SpaceX launch information from Wikipedia tables using Requests, BeautifulSoup, and Pandas.
 
-## Overview
+This project is associated with the SpaceX data collection exercises from the IBM Data Science learning pathway.
 
-This project demonstrates how to collect, clean, and structure SpaceX launch data through web scraping using Python. Data was extracted from the SpaceX launch records available on Wikipedia and transformed into a structured dataset for further analysis and machine learning applications.
+## Intended Workflow
 
-The project focuses on building practical skills in HTTP requests, HTML parsing, data extraction, and data preparation using industry-standard Python libraries.
+1. Retrieve the relevant launch information page.
+2. Parse the HTML and identify launch tables.
+3. Extract flight, booster, payload, orbit, customer, and outcome information.
+4. Clean and structure the records.
+5. Prepare a DataFrame for further analysis.
 
-## Objectives
+## Tools
 
-* Retrieve web content programmatically using HTTP requests
-* Parse HTML documents with BeautifulSoup
-* Extract relevant launch information from HTML tables
-* Clean and organize scraped data into a structured format
-* Create a Pandas DataFrame for exploratory data analysis and predictive modeling
+- Python
+- Requests
+- BeautifulSoup
+- Pandas
+- NumPy
+- Jupyter Notebook
 
-## Dataset Features
-
-The final dataset includes the following attributes:
-
-* Flight Number
-* Launch Date
-* Launch Time
-* Booster Version
-* Launch Site
-* Payload
-* Payload Mass
-* Orbit
-* Customer
-* Launch Outcome
-* Booster Landing Result
-
-## Technologies Used
-
-* Python
-* Jupyter Notebook
-* Requests
-* BeautifulSoup4
-* Pandas
-* NumPy
-
-## Project Workflow
-
-1. Send an HTTP request to the SpaceX Wikipedia page.
-2. Parse the HTML content using BeautifulSoup.
-3. Identify and extract launch tables.
-4. Process table headers and rows.
-5. Clean and standardize the extracted data.
-6. Store the results in a Pandas DataFrame.
-7. Export the dataset for downstream analysis.
-
-## Key Learning Outcomes
-
-* Web scraping fundamentals
-* HTML document structure and parsing
-* Data cleaning and preprocessing
-* Working with nested HTML elements
-* Converting unstructured web data into tabular datasets
-
-## Repository Structure
+## Current Repository Layout
 
 ```text
-├── data/
-│   └── spacex_launch_data.csv
-├── notebooks/
-│   └── jupyter-labs-webscraping.ipynb
-├── images/
-├── README.md
-└── requirements.txt
+.
+├── CLI- TODO APP/
+├── OneDrive/
+└── README.md
 ```
 
-## Installation
+## Important Repository Note
 
-Clone the repository:
+The existing README describes a `notebooks/` folder and a `data/` folder, but neither appears at the repository root. Before presenting this as a reproducible scraping project, the relevant notebook, dataset, and dependencies should be organised and linked from this README.
 
-```bash
-git clone https://github.com/your-username/spacex-web-scraping.git
-cd spacex-web-scraping
-```
+## Related Work
 
-Install dependencies:
+- [SpaceX Data Collection and Wrangling](https://github.com/Slimjoey56/SpaceX-Launch-Data-Collection-and-Wrangling)
+- [SpaceX SQL Analysis](https://github.com/Slimjoey56/spacex-launch-data-sql-analysis)
+- [SpaceX EDA](https://github.com/Slimjoey56/spacex_launch_data_eda)
 
-```bash
-pip install -r requirements.txt
-```
+## Author
 
-Launch Jupyter Notebook:
-
-```bash
-jupyter notebook
-```
-
-## Example Usage
-
-Run the notebook:
-
-```bash
-jupyter-lab notebooks/jupyter-labs-webscraping.ipynb
-```
-
-## Future Improvements
-
-* Automate data updates with scheduled scraping
-* Integrate data from the SpaceX API
-* Perform exploratory data analysis and visualization
-* Build predictive models for launch success
-
-## Acknowledgments
-
-* IBM Data Science Professional Certificate
-* SpaceX
-* Wikipedia contributors
-* BeautifulSoup documentation
+Jehosaphat Brobbey Impiani  
+[GitHub](https://github.com/Slimjoey56)
